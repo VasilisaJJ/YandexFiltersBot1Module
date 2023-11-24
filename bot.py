@@ -6,7 +6,7 @@ from filters import BlueFilter, Filter, GreenFilter, InverseFilter, RedFilter
 from PIL import Image
 from telebot.types import KeyboardButton, ReplyKeyboardMarkup, Message
 
-TOKEN = "YOUR_TOKEN_HERE"
+TOKEN = "6849876104:AAFsQOVLhFU6T_nhadCqSQnO4q7XetlA1W0"
 bot = telebot.TeleBot(TOKEN)
 
 filters: dict[str, Type[Filter]] = {
