@@ -56,3 +56,7 @@ class InverseFilter(Filter):
         for color in (r, g, b):
             result.append(int((1 - math.exp(color / 255) / math.e) * 255))
         return tuple(result)
+
+class EmptyFilter(Filter):
+    def apply_to_pixel(self, r: int, g: int, b: int):
+        return r, g, b
