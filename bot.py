@@ -2,7 +2,7 @@ import os
 from typing import Type
 
 import telebot
-from filters import RedFilter, GreenFilter, BlueFilter, InverseFilter, RandomFilter
+from filters import Filter, RedFilter, GreenFilter, BlueFilter, InverseFilter, RandomFilter
 from PIL import Image
 from telebot.types import KeyboardButton, ReplyKeyboardMarkup, Message
 
