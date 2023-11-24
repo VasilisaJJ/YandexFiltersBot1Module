@@ -14,6 +14,7 @@ filters: dict[str, Type[Filter]] = {
     "Зеленый фильтр": GreenFilter(),
     "Синий фильтр": BlueFilter(),
     "Инверсия": InverseFilter(),
+    "Рандомный фильтр": RandomFilter()
 }
 
 # Словарь для хранения последней пользовательской картинки
