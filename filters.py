@@ -61,7 +61,7 @@ class EmptyFilter(Filter):
     def apply_to_pixel(self, r: int, g: int, b: int):
         return r, g, b
 class RandomFilter(Filter):
-    def apply_pixel(self, r: int,g: int,b: int) -> tuple[int, int, int]:
+    def apply_to_pixel(self, r: int,g: int,b: int) -> tuple[int, int, int]:
         result = []
         for color in (r, g, b):
             result.append(max(color - randint(1, 200), 1))
